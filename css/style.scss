@@ -31,6 +31,12 @@
       background-position: center;
       height: 100vh;
   }
+
+  @media screen and (min-width: 820px) and (max-width: 821px){
+    .hero-section {
+      height: 60vh;
+    }
+  }
   
   
   
@@ -179,7 +185,7 @@
   }
 
   
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 821px) {
       .section-3-content {
       padding-top: 1em;
       margin-top: 0;
