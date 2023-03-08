@@ -38,8 +38,6 @@
     }
   }
   
-  
-  
   .t1 {
     text-align: center;
     color: white;
@@ -297,15 +295,13 @@
       margin-left: -100px;
     }
   }
+
   // ---------------------------------------------------------
   
   .section-5 {
     background-color: $background-1;
   }
 
-  // .splide__track {
-  //   overflow: visible;
-  // }  
   
   // ---------------------------------------------------------
 
@@ -467,19 +463,9 @@
   }
 
   .stuff-2 {
-
     position: absolute;
     bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-
-  .red {
-    background-color : red;
-  }
-
-  .blue {
-    background-color : blue;
   }
