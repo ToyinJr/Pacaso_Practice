@@ -29,8 +29,6 @@ splide = new Splide( '.splide', {
     perMove: 1,
     breakpoints: {
       800: {
-        // direction: 'ttb',
-        // height: '31rem',
         type: "loop",
         perPage: 1,
         perMove: 1,
