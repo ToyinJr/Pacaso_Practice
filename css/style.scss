@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  $background-1:  #F4F5F6;
+  $btn-color: #222C2B;
+  
+  
+  
+  @mixin flex($flex, $align, $justify ) {
+      display: $flex;
+      align-items: $align;
+      justify-content: $justify;
+  }
+  
+  @mixin center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .nav-bar {
+      @include flex(flex, top, space-around);
+      
+  }
+  
+  .hero-section {
+    background-image: url(../images/nav-image.svg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+  }
+  
+  
+  
+  .t1 {
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+    padding-top: 15%;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .hero-section {
+      height: 50vh;
+    }
+  
+    .t1 {
+      padding-top: 20%;
+    }
+  
+  }
+  
+  /* Style The Dropdown Button */
+  
+    
+    /* The container <div> - needed to position the dropdown content */
+    #dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    #dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    #dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+   
+    // ---------------------------------------------------------
+  
+    .section-2 {
+      background-color: $background-1;
+      padding-bottom: 3em;
+    }
+
+    .sat {
+      @include flex(flex, start, space-around);
+      gap: 1em;
+    }
+
+    .sat2 {
+      display: flex;
+      gap: 1em;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .sat2 {
+        img{
+          margin-top: -1em
+        }
+      }
+    }
+
+    .section-2-content {
+      @include flex(flex, center, space-between);
+    }
+  
+    .t2 {
+      font-size: 2vw;
+      font-weight: 500;
+    }
+  
+    .lm {
+      width: fit-content;
+      color: white;
+      @include center;
+      background-color: $btn-color;
+    }
+  
+    @media screen and (max-width: 800px) {
+      .section-2-content {
+      @include flex(flex, center, space-around);
+      flex-direction: column;
+      }
+  
+    }
+  
+  // ---------------------------------------------------------
+  
+   .smthng {
+      display: grid;
+      grid-template-columns: 30%;
+      position: relative;
+      margin-top: -150px;
+    }
+
+
+  .adv-card {
+    background-color: white;
+  }
+
+  .t4 {
+    color: gray;
+    font-weight: 500;
+  }
+
+
+  .adv-col {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 1em;
+  }
+
+
+  .adv-col {
+    div {
+      .num{
+        color: gray;
+        font-weight: 600;
+    }
+
+    .txt {
+      font-weight: 700;
+    }
+  }
+  }
+
+  .section-3-content {
+    @include flex(flex, end, space-around);
+    position: relative;
+    flex-direction: column;
+    margin-top: -250px;
+  }
+
+  
+    @media screen and (max-width: 800px) {
+      .section-3-content {
+      padding-top: 1em;
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      }
+  
+      .smthng {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 0;
+      }
+  
+      .adv-card {
+        width: 100%;
+        text-align: center;
+      }
+  
+      .txt {
+        font-weight: 100;
+        font-size: 2.5vw;
+      }
+  
+      .num {
+        font-weight: 100;
+        scale: 0.5;
+      }
+      
+  
+      .t2 {
+        font-size: 3vw;
+      }
+      
+    }
+  
+  
+  // ---------------------------------------------------------
+  .section-4-content {
+    @include flex(flex, start, space-between,);
+  }
+  
+  .ip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .explore {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .offers {
+    @include flex(flex, center, space-around);
+    flex-direction: column;
+  }
+
+  .offers-imgs {
+    @include flex(flex, center, space-around);
+    gap: 1em;
+  }
+  
+  .overlap {
+    @include flex(flex, start, space-around);
+    flex-direction: column;
+  }
+  
+  .overlap-2 {
+    position:relative;
+    margin-top: -100px;
+    margin-left: -170px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .section-4-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .ip {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .overlap-1, .overlap-2 {
+      transform: scale(0.8);
+    }
+  
+    .overlap-2 {
+      margin-left: -50px;
+      margin-top: -150px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .overlap {
+      padding-top: 1em;
+    }
+
+    .overlap-1{
+      transform: scale(1.0);
+    }
+
+    .overlap-2 {
+      transform: scale(0.6);
+      margin-left: -100px;
+    }
+  }
+  // ---------------------------------------------------------
+  
+  .section-5 {
+    background-color: $background-1;
+  }
+
+  // .splide__track {
+  //   overflow: visible;
+  // }  
+  
+  // ---------------------------------------------------------
+
+  .submit {
+    color: white;
+    background-color: $btn-color;
+  }
+
+  .form1 {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid $btn-color;
+    opacity: 45%;
+    width: 35%;
+  }
+
+  .form2 {
+    width: 73%;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+  }
+
+  .fs1 {
+    display: flex;
+    gap: 2em;
+  }
+
+  .fs3 {
+    display: flex;
+    gap: 2em;
+  }
+
+  @media screen and (max-width: 800px) {
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      padding-top: 1em;
+    }
+
+    .form1 {
+      width: 100%;
+    }
+
+    .fs1 {
+      flex-direction: column;
+    }
+  }
+
+  // ---------------------------------------------------------
+  .section-7 {
+    background-color: $btn-color;
+  }
+  
+  .section-7 {
+      .t2 {
+        text-align: center;
+        color: white;
+    }
+  }
+
+  .stay {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-bottom: 2em;
+    align-items: end;
+  }
+
+  hr {
+    opacity: 25%;
+  }
+
+  .content-section {
+    @include flex(flex, start, space-around);
+  }
+
+  .content-section {
+    p {
+      color: white;
+    }
+
+    padding-bottom: 2em;
+  }
+
+  .socials {
+    @include flex(flex, center, space-around);
+    gap: 0.5em;
+  }
+  
+  
+
+  .footer-text {
+    padding-top: 1em;
+    @include flex(flex, center, space-between);
+  }
+
+
+  @media screen and (max-width: 700px) {
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .content-section {
+        div {
+          padding-top: 1em;
+        }
+    }
+
+    .content-section {
+      p {
+        color: white;
+      }
+    }
+
+    .footer-text{
+      display: none;
+    }
+  }
+
+
+  .slider{
+    opacity: 0.9;
+  }
+
+  .stuff {
+    background-image: url(../images/slider/slider-1.svg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-left: 1em;
+    padding-top: 11em;
+    padding-bottom: 12.9em;
+  }
+
+  .slide-2 {
+    background-image: url(../images/slider/slider-2.svg);
+  }
+
+  .slide-3 {
+    background-image: url(../images/slider/slider-3.svg);
+  }
+
+  .slide-4 {
+    background-image: url(../images/slider/slider-4.svg);
+  }
+
+  .stuff-1, .stuff-2 {
+    width: 90%;
+  }
+
+  .stuff-2 {
+
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .red {
+    background-color : red;
+  }
+
+  .blue {
+    background-color : blue;
+  }
